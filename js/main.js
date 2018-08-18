@@ -41,55 +41,70 @@ let submitButton = document.querySelector('.modal-footer button');
     btn.addEventListener('click', function(){alert('Test works')});
 
 
-    var prg1 = document.querySelector('.xs-skill-track1');
-    var percent1 = document.querySelector('.number-percentage1');
-    let width1 = 1;
+    const prg1 = document.querySelector('.xs-skill-track1');
+    const percent1 = document.querySelector('.number-percentage1');
+    let width = 1;
     var bar_width1 = prg1.style.width;
-    var prg2 = document.querySelector('.xs-skill-track2');
-    var percent2 = document.querySelector('.number-percentage2');
-    var width2 = 1;
+    var id = setInterval(frame, 50);
+    const prg2 = document.querySelector('.xs-skill-track2');
+    const percent2 = document.querySelector('.number-percentage2');
+    //var width2 = 1;
     var bar_width2 = prg2.style.width;
     var id = setInterval(frame_2, 50);
-    var id = setInterval(frame, 50);
-    var prg3 = document.querySelector('.xs-skill-track3');
-    var percent3 = document.querySelector('.number-percentage3');
-    var width3 = 1;
+    const prg3 = document.querySelector('.xs-skill-track3');
+    const percent3 = document.querySelector('.number-percentage3');
+    //var width3 = 1;
     var bar_width3 = prg3.style.width;
     var id = setInterval(frame_3, 50);
+    const prg4 = document.querySelector('.xs-skill-track4');
+    const percent4 = document.querySelector('.number-percentage4');
+    var bar_width4 = prg4.style.width;
+    var id = setInterval(frame_4, 50);
+
     bar_width1 = bar_width1.replace('%', '');
     
-
     function frame(){
-        if (width1 >= bar_width1) {
+        if (width >= bar_width1) {
             clearInterval(id);
         } else {
-            width1 +=1;
-            percent1.textContent = width1;
-            prg1.style.width = width1 + '%';
+            width +=1;
+            percent1.textContent = width;
+            prg1.style.width = width + '%';
         }
     }
 
     bar_width2 = bar_width2.replace('%', '');
 
     function frame_2(){
-        if (width2 >= bar_width2) {
+        if (width >= bar_width2) {
             clearInterval(id);
         } else {
-            width2 +=1;
-            percent2.textContent = width2;
-            prg2.style.width = width2 + '%';
+            width +=1;
+            percent2.textContent = width;
+            prg2.style.width = width + '%';
         }
     }
 
     bar_width3 = bar_width3.replace('%', '');
 
     function frame_3(){
-        if (width3 >= bar_width3) {
+        if (width >= bar_width3) {
             clearInterval(id);
         } else {
-            width3 +=1;
-            percent3.textContent = width3;
-            prg3.style.width = width3 + '%';
+            width +=1;
+            percent3.textContent = width;
+            prg3.style.width = width + '%';
+        }
+    }
+
+    bar_width4 = bar_width4.replace('%', '');
+    function frame_4(){
+        if (width >= bar_width3) {
+            clearInterval(id);
+        } else {
+            width +=1;
+            percent4.textContent = width;
+            prg4.style.width = width + '%';
         }
     }
     submitButton.addEventListener('click', contactForm);

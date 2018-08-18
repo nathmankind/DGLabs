@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>Agency</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: #6b95e0;
+        }.navbar-light .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+        .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+            color: #fff;
+        }
+        
+    </style>
 </head>
 <body>
     <header class="header">
@@ -21,8 +33,43 @@
         <img class="shape7" src="assets/images/shape7.png" alt="shape2" width="120px">
         <img class="shape8" src="assets/images/shape8.png" alt="shape2" width="120px">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 logo-container">
+            <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                                <a class="navbar-brand" href="#">
+                                    <img src="assets/images/logo.png" alt="company-logo">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto" style="color: #6b95e0;">
+                                        <li class="nav-item active">
+                                            <a href="#" class="nav-link">Home </a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#about">about</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#">services</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#portfolio">portfolio</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#">price</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#">blog</a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a class="nav-link" href="#">contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                </div>
+                    
+                <!--<div class="col-md-3 logo-container">
                     <img src="assets/images/logo.png" alt="">
                 </div>
                 <div class="col-md-9">
@@ -35,8 +82,7 @@
                             <a class="nav-link" href="#">blog</a>
                             <a class="nav-link" href="#">contact</a>
                     </nav>
-                </div>
-            </div>
+                </div>-->
             <div class="row">
                 <div class="col-md-6 head-left">
                     <p class="lead">Introducing creative homepage</p>
@@ -168,29 +214,29 @@
     <section class="proof mt-5" id="proof">
         <div class="overlay-image">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 py-5">
+                <div class="row py-5">
+                    <div class=" proof-figures col-lg-3 col-md-3 col-sm-6 ">
                         <img src="assets/images/love-icon.png" alt="">
                         <h1 class="pl-2">68,500</h1>
                         <p class="lead pl-2">Satisfied customers</p>
                         <div class="line-bottom ml-2">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 py-5">
+                    <div class="proof-figures col-lg-3 col-md-3 col-sm-6 ">
                         <img src="assets/images/suit-case-icon.png" alt="">
                         <h1 class="pl-2">50,250</h1>
                         <p class="lead pl-2">Projects completed</p>
                         <div class="line-bottom ml-2">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 py-5">
+                    <div class="proof-figures col-lg-3 col-md-3 col-sm-6">
                         <img src="assets/images/like-icon.png" alt="">
                         <h1 class="pl-2">70,000+</h1>
                         <p class="lead pl-2">Facebook likes</p>
                         <div class="line-bottom ml-2">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 py-5">
+                    <div class="proof-figures col-lg-3 col-md-3 col-sm-6">
                         <img src="assets/images/twitter-icon.png" alt="">
                         <h1 class="pl-2">86,500+</h1>
                         <p class="lead pl-2">Followers on twitter</p>
@@ -205,39 +251,39 @@
         <div class="container ">
             <h1 class="text-center display-4 bg-color">Our Latest Works</h1>
         </div>
-        <div class="container py-3">
+        <div class=" py-3">
             <nav class="nav nav-pills justify-content-center">
-                <a class="nav-link active" href="">All projects</a>
-                <a class="nav-link" href="">Web Design</a>
-                <a class="nav-link" href="">Graphic Design</a>
-                <a class="nav-link" href="">App Design</a>
+                <a class="nav-link active" href="#design" data-toggle="tab">All projects</a>
+                <a class="nav-link" href="#web-design" data-toggle="tab">Web Design</a>
+                <a class="nav-link" href="#graphic-design" data-toggle="tab">Graphic Design</a>
+                <a class="nav-link" href="#web-design" data-toggle="tab">App Design</a>
             </nav>
         </div>
-        <div class="container my-5">
+        <div class="container tab-content my-5">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="portfolio-card text-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 tab-pane active" id="design graphic-design">
+                    <div class="portfolio-card  text-center" >
                         <img class="img-fluid"  src="assets/images/portfolio1.png" alt="">
                         <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                         <p class="pb-3">Graphic Design</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="portfolio-card text-center">
+                    <div class="portfolio-card tab-pane text-center" id="design web-design">
                         <img class="img-fluid"  src="assets/images/portfolio2.png" alt="">
                         <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                         <p class="pb-3">Web Design</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="portfolio-card text-center">
+                    <div class="portfolio-card tab-pane text-center" id="design web-design">
                         <img class="img-fluid"  src="assets/images/portfolio3.png" alt="">
                         <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                         <p class="pb-3">App Design</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="portfolio-card text-center">
+                    <div class="portfolio-card tab-pane text-center" id="design web-design">
                         <img class="img-fluid" src="assets/images/portfolio4.png" alt="">
                         <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                         <p class="pb-3">Graphic Design</p>
@@ -246,28 +292,28 @@
             </div>
             <div class="row my-5 pb-5">
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="portfolio-card text-center">
+                        <div class="portfolio-card tab-pane text-center" id="design graphic-design">
                             <img class="img-fluid"  src="assets/images/portfolio1.png" alt="">
                             <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                             <p class="pb-3">Graphic Design</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="portfolio-card text-center">
+                        <div class="portfolio-card tab-pane text-center" id="design web-design">
                             <img class="img-fluid"  src="assets/images/portfolio2.png" alt="">
                             <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                             <p class="pb-3">Web Design</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="portfolio-card text-center">
+                        <div class="portfolio-card tab-pane text-center" id="design graphic-design">
                             <img class="img-fluid"  src="assets/images/portfolio3.png" alt="">
                             <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                             <p class="pb-3">App Design</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="portfolio-card text-center">
+                    <div class="col-lg-3 col-md-3 col-sm-6" id="design graphic-design">
+                        <div class="portfolio-card tab-pane text-center">
                             <img class="img-fluid" src="assets/images/portfolio4.png" alt="">
                             <h3 class="bg-color pt-3">Faux Fur Jacket</h3>
                             <p class="pb-3">Graphic Design</p>

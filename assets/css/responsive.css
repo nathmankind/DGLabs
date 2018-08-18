@@ -1,0 +1,44 @@
+@media screen and (max-width: 500px) {
+    .shape1, .shape2, .shape3, .shape4, 
+    .shape5, .shape6, .shape7, .shape8 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .xs-shape-background {
+        display: none;
+    }
+    .shape6 {
+        top:280px;
+    }
+    .header {
+        padding-bottom: 80px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .shape5, .shape6 {
+        display: none;
+    }
+    .img-head {
+        margin-top: 35px;
+    }
+    .about-card {
+        width: 93%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .proof .container {
+        text-align: center;
+    }
+    .line-bottom {
+        display: none;
+    }
+    .proof-figures {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:770px) {
+    .proof-figures {
+        padding-top: 20px;
+    }
+}
